@@ -1,0 +1,48 @@
+hello.py:
+
+print('Hello, world!')
+print()
+name = input('What is your name? ')
+print('hi', name)
+
+---
+
+Python 3.6.1
+>>> 2+3
+5
+>>> 'hi'
+'hi'
+>>> 5+4*3
+17
+>>> 5/2
+2.5
+>>> 7//2
+3
+>>> 11/3
+3.6666666666666665
+>>> 11//3
+3
+>>> 2**3
+8
+>>> (4+4)-(4+4)
+0
+>>> a=4
+>>> 
+>>> a = a+1
+>>> a
+5
+>>> a + 8
+13
+>>> a
+5
+
+>>>%Run hello.py
+Hello, world!
+
+>>>%Run hello.py
+Hello, world!
+
+What is your name? Prof Briggs
+hi Prof Briggs
+
+>>> 
