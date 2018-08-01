@@ -1,0 +1,22 @@
+"""
+CS101 Class examples
+Functions
+"""
+
+import math
+
+def circumference(r):
+    """
+    Returns circumference of a circle with radius r
+    """
+    return 2 * math.pi * r
+
+def absolute(y):
+    """
+    Returns absolute value of input parameter y
+    """
+    if y < 0:
+        return -y
+    else:
+        return y
+    
