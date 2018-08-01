@@ -1,0 +1,41 @@
+>>> import math
+>>> math.log(100)
+4.605170185988092
+>>> 2*math.pi
+6.283185307179586
+>>> s = 'the imitation game'
+>>> s.title()
+'The Imitation Game'
+>>> s.find(' ')
+3
+>>> s.index(' ')
+3
+>>> s.rfind(' ')
+13
+>>> s.replace('game', 'movie')
+'the imitation movie'
+>>> s
+'the imitation game'
+>>> s
+'the imitation game'
+>>> s = s[0:14] + 'movie'
+>>> s
+'the imitation movie'
+>>> s.count(' ')
+2
+>>> s
+'the imitation movie'
+>>> s = s[4:13].upper()
+>>> s
+'IMITATION'
+>>> %Run mymath.py
+>>> circumference(1)
+6.283185307179586
+>>> circumference(2)
+12.566370614359172
+>>> %Run mymath.py
+>>> absolute(-5)
+5
+>>> absolute(5)
+5
+>>> 
