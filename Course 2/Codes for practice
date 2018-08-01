@@ -1,0 +1,220 @@
+Python 3.6.1
+>>> 7+3
+10
+>>> 10-1
+9
+>>> 10*2
+20
+>>> 10**2
+100
+>>> 10/3
+3.3333333333333335
+>>> 10//3
+3
+>>> 10 % 3
+1
+>>> a = 10 / 3
+>>> a
+3.3333333333333335
+>>> b = a
+>>> b
+3.3333333333333335
+>>> print('hi')
+hi
+>>> print(a)
+3.3333333333333335
+>>> print(a + b)
+6.666666666666667
+>>> input('Whats your fav class')
+Whats your fav classCS101
+'CS101'
+>>> %cd /Users/jgrant/class/sp.2018/cs101
+>>> %Run 20180215.py
+>>> %Run 20180215.py
+10
+>>> %Run 20180215.py
+10
+a
+>>> a =   5  +     10
+>>> a
+15
+>>> 'hi'
+'hi'
+>>> a = 'hi'
+>>> a
+'hi'
+>>> a[0]
+'h'
+>>> a[1]
+'i'
+>>> a[2]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+IndexError: string index out of range
+>>> a[01]
+  File "<pyshell>", line 1
+    a[01]
+       ^
+SyntaxError: invalid token
+
+>>> a = 'Welcome to CS101'
+>>> a
+'Welcome to CS101'
+>>> len(a)
+16
+>>> a[0]
+'W'
+>>> a[15]
+'1'
+>>> a[16]
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+IndexError: string index out of range
+>>> a[-1]
+'1'
+>>> a[-2]
+'0'
+>>> a[2:]
+'lcome to CS101'
+>>> a
+'Welcome to CS101'
+>>> a[0:6]
+'Welcom'
+>>> a[0:7]
+'Welcome'
+>>> a[:7]
+'Welcome'
+>>> a[11:]
+'CS101'
+>>> a
+'Welcome to CS101'
+>>> a[8]
+'t'
+>>> a[7]
+' '
+>>> a[0:]
+'Welcome to CS101'
+>>> a[0:1]
+'W'
+>>> a[0:7]
+'Welcome'
+>>> a = "it's a problem"
+>>> a
+"it's a problem"
+>>> a = "Hello \"Grant\""
+>>> a
+'Hello "Grant"'
+>>> a = 'Hello\n Jason'
+>>> a
+'Hello\n Jason'
+>>> print(a)
+Hello
+ Jason
+>>> a = "Hello\n Jason"
+>>> print(a)
+Hello
+ Jason
+>>> a = '3.2'
+>>> a
+'3.2'
+>>> a = input("What is your favorite number: ")
+What is your favorite number: 12
+>>> a
+'12'
+>>> a = a * 3
+>>> a
+'121212'
+>>> a = 'HA'
+>>> a  = a * 8
+>>> a
+'HAHAHAHAHAHAHAHA'
+>>> a = input("What is your favorite number: ")
+What is your favorite number: 5
+>>> a
+'5'
+>>> type(a)
+<class 'str'>
+>>> int(a)
+5
+>>> b = int(a)
+>>> b
+5
+>>> type(b)
+<class 'int'>
+>>> float(a)
+5.0
+>>> a = input("What is your favorite number: ")
+What is your favorite number: 7
+>>> a
+'7'
+>>> a = int(a)
+>>> a = a * 3
+>>> a
+21
+>>> a = input("What is your favorite number: ")
+What is your favorite number: seven
+>>> a = int(a)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'seven'
+>>> a = 10
+>>> a > 11
+False
+>>> a < 11
+True
+>>> b=a<11
+>>> b
+True
+>>> a == 10
+True
+>>> a = “This is my String”
+  File "<pyshell>", line 1
+    a = “This is my String”
+            ^
+SyntaxError: invalid character in identifier
+
+>>> a = 'This is my String'
+>>> a[-1]
+'g'
+>>> a[-2]
+'n'
+>>> a[-2:]
+'ng'
+>>> a[:-2]
+'This is my Stri'
+>>> name = "ProfGrant"
+>>> Name = "ProfJGrant"
+>>> name
+'ProfGrant'
+>>> Name
+'ProfJGrant'
+>>> name1 = 'CS101"
+  File "<pyshell>", line 1
+    name1 = 'CS101"
+                  ^
+SyntaxError: EOL while scanning string literal
+
+>>> name1 = 'CS101'
+>>> 1name = 'CS101'
+  File "<pyshell>", line 1
+    1name = 'CS101'
+        ^
+SyntaxError: invalid syntax
+
+>>> name_1 = 'CS101'
+>>> round(6.4)
+6
+>>> round(6.6)
+7
+>>> "one"+"two"
+'onetwo'
+>>> a = "two"
+>>> b = "one"
+>>> a+b
+'twoone'
+>>> _a
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name '_a' is not defined
+>>> _a = 1
+>>> 
