@@ -1,0 +1,107 @@
+CS101 - Homework 1
+
+Due: 2018-02-21 11:59pm
+
+Objectives
+Start using Python
+Get practice doing basic numeric computation
+Get practice working with variables
+[30 points] Python Exercises
+For this assignment, you will do a collection of short exercises in Python.
+
+Problems
+1. [7 points] Write some lines of Python code to produce the following output:
+0: 0
+1: 1
+2: 2
+3: 3
+4: 4
+5: 5
+
+On the face of it, this is very easy, but we are going to make it a little more difficult. The initial number and colon can be text (i.e., in quotes), but the second copy of the number must be the result of an evaluated Python expression. This expression can use any of the operators that we talked about in class and as many parentheses as you want. The challenge, however, is that the only number you are allowed to use is the number 4. In addition, you must use 4 (and only 4) of them.
+
+To help you get the idea, we have done the first line for you.
+
+print("0:", 4 + 4 - 4 - 4)
+Complete the code to similarly print the other 5 lines above.
+
+
+
+2. [7 points] According to xkcd (https://xkcd.com/314/), the 'standard creepiness rule' states that it is creepy to date someone under half your age plus seven. Calculate the youngest and oldest you could date without violating this rule. Your code should calculate these ages and store them in variables lowerAge and upperAge respectively. We have given you the print statement (in the provided template file) to report the result.
+
+
+
+3. [8 points] We are given a quantity of cups. We want to distribute these to have the fewest number of containers, but we do not want to waste space by not filling a container. The containers we have come in gallon, quart, pint, and cup size (Google can help you with the conversion rates if you are unfamiliar). The last line (provided in the template) will print out the contents of variables named gallons, quarts, pints and cups, so make sure they are all loaded with the appropriate values.
+
+Example: the user has entered 5 as the number of cups. We would return
+0 gallons, 1 quarts, 0 pints, 1 cups
+
+Hint: integer division and the % operator will be very useful in this problem.
+
+Optional Challenge (1 extra point): The extra 's' on the end of the labels look weird when a quantity is 1. Can you fix this? [It cannot be fixed using just what we have seen in class so far so this will take some research]
+
+
+
+4. [8 points] We would like you to print out a sequence of strings. The catch is that you are not allowed to use any string literals (that is text between quotes). Instead, we provide you with three strings and you must compose the other strings by using indexes and slicing. Try to minimize the number of additions required. We've done the first one for you so you can see how it works.
+
+The strings you need to print are:
+fireman
+banana
+romana
+time lord
+man down
+to be or not to be
+
+The three strings to build from are:
+str1 = 'gallifrey'
+str2 = 'cyberman'
+str3 = 'doctor who'
+
+We'll do the first one for you. Be sure to similarly include a comment on all your answers too!
+
+# fireman
+print(str1[5] + str1[4] + str1[6:8] + str2[5:])
+Write code to similarly print 'fireman' and the remaining 5 strings above.
+
+Template
+Start by downloading our provided code to get you started. Right-click on the link template file. Save the file in a new folder where you plan to do your CS101 work (for example, Documents/cs101/homework/). Rename the file to be of the form username_hw1.py, where username is your username.
+
+Rather than double-clicking on the file to open it, first launch Thonny, then open the file from within Thonny. You will find that it consists of "stubs" for the 4 questions. Comments indicate where your code should go.
+
+Comments
+Recall that comments are annotations we put in source code that the computer ignores. Comments in the template file are used to embed directions to you. In later assignments, we will expect you to write your own comments to describe what your programs do.
+
+There are two kinds of comments in Python, and to illustrate them, we can look at the second question:
+
+
+"""
+2. According to xkcd (https://xkcd.com/314/), the 'standard
+creepiness rule' states that it is creepy to date someone under half
+your age plus seven.  We calculate the youngest and oldest one could date
+without violating this rule, and store these ages in variables lowerAge
+and upperAge respectively. Some initial code and a print statement to
+report the result is given.
+
+"""
+
+# the float() function here converts the string input to a floating point number
+age = float(input('Enter your age: '))
+
+The question itself is in a multi-line comment. Multi-line comments are enclosed with three quotation marks. As their name implies, we can include as many lines of text inside them as we want. The second kind of comment, the inline comment, can be seen at the end of the question. They start with the #, and they continue until the end of the line.
+
+The main difference between the two is structural, but we also tend to use them in different ways. Multi-line comments tend to be used to describe large sections, while inline comments tend to be more detailed and specific commentary on nearby lines of code.
+
+The print() function
+While we were using the Python console, we could take advantage of the fact that the Python interpreter would print out the value of any expression that we typed in. When we write scripts, however, we no longer see these values. If you just type 5 + 2 in a Python script, the expression will be evaluated, but the result will vanish.
+
+The print() function is used to provide feedback to the user. When we call print, the arguments are reported to the user on the console. To print out the contents of a variable x, we would write the statement print(x).
+
+If we want to print out multiple things on the same line, we can add more arguments to the function, and Python will print everything out, separated by spaces. So, if the variable x is assigned the value 42, then print('x:', x) will print out the string "x: 42". It is helpful to print out text like this to make it clear what the value is.
+
+The input() function
+Another important element to point out is input(). This is a function that reads data from the user on the Python console. When Python executes this, it will print out the contents of the quoted text inside and then wait for you to type something. When you do, it will be returned to your Python program as quoted text and you can store it in a variable.
+
+In this example, the input() function has been joined with the float() and int() functions. When you pass these a string, they will attempt to convert the contents of the string to the respective numerical type (e.g., float('4.5') == 4.5). Essentially, we are just using these to convert the strings we get from the user to numbers so we can use them in our code. We will discuss this further in the future; for now, just accept that in questions 2 and 3 the first line (provided) will ask the user for a number, convert the text to the appropriate numeric type, and then store it in a variable (in this case age or userCups). A good exercise would be to copy one of those lines to the Python console and just see what it does. Try tinkering with it and seeing what effect that has on its behavior.
+
+Handing in your work
+Before submitting, see the grading rubric and make sure you have followed all instructions correctly. Submit your file username_hw1.py using the CS 101 submit script (you may submit multiple times, just be sure you always spell your name the same way, and always specify the same Lab section).
